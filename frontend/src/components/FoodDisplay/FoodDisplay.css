@@ -1,0 +1,37 @@
+.food-display {
+    margin-top: 30px;
+}
+
+.food-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+}
+
+.food-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); /* Adjust width for consistency */
+    gap: 30px;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: start;
+}
+
+.food-display-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure container fills grid column */
+    height: 100%; /* Ensure uniform height */
+}
+
+.food-display-list-item img {
+    width: 100%; /* Ensures the image fills the container */
+    height: 200px; /* Fixed height for uniform size */
+    object-fit: cover; /* Crops and scales the image while maintaining aspect ratio */
+    border-radius: 10px;
+}
